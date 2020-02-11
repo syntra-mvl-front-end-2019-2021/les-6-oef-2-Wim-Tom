@@ -48,12 +48,42 @@ p{
     text-align: center;
     height: 14em;
     border-top: .5em solid #5586BF;
+    padding: 1em;
 }
 
 .content-1{
     width: 100%;
     padding: 1em;
 }
+
+.content-1 > article{
+    text-align: center;
+    height: 14em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+}
+
+.content-1 > article:not(:last-of-type){
+    padding-bottom: 1em;
+    border-bottom: 1px solid grey;
+}
+
+.blauweknop{
+    width: 100%;
+    background-color: #5586BF;
+    color: white;
+    text-decoration: none;
+    font-size: .7em;
+    padding: .8em;
+}
+
+h3{
+    color: #5586BF;
+    font-weight: 100;
+}
+
 
 
 
