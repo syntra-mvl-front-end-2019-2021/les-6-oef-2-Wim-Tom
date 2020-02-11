@@ -54,6 +54,7 @@ p{
 .content-1, .content-2{
     width: 100%;
     padding: 1em;
+    text-align: center;
 }
 
 .content-2{
@@ -62,17 +63,20 @@ p{
     text-align: center;
 }
 
-.content-1 > article{
+.articlebox{
     text-align: center;
-    height: 14em;
+    height: 17em;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
 
 }
 
-.content-1 > article:not(:last-of-type){
+.articlebox:not(:last-of-type){
     padding-bottom: 1em;
+}
+
+.content-1 > article:not(:last-of-type){
     border-bottom: 1px solid grey;
 }
 
@@ -88,6 +92,10 @@ p{
 h3{
     color: #5586BF;
     font-weight: 100;
+}
+
+h4{
+    color: white;
 }
 
 .content-2 > h3{
@@ -118,5 +126,19 @@ h3{
     margin-bottom: 2em;
 }
 
+.articleimg{
+    width: 100%;
+    height: auto;
+}
 
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: .5em;
+    padding: 1em;
+   
+}
 
+footer > .content-1{
+    border-top: 1px solid grey;
+}
