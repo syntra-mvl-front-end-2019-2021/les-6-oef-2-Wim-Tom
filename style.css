@@ -143,3 +143,20 @@ footer > .content-1{
     font-size: .5em;
     border-top: 1px solid grey;
 }
+
+
+@media screen and (min-width: 480px) {
+
+    .content-1,
+    .content-2,
+    .articlebox {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .blauweknop {
+        width: 20%;
+        text-align: center;
+    }
+
+
+}
