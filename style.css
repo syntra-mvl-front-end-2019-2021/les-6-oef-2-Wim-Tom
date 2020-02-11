@@ -134,11 +134,12 @@ h4{
 footer{
     width: 100%;
     text-align: center;
-    font-size: .5em;
+    
     padding: 1em;
    
 }
 
 footer > .content-1{
+    font-size: .5em;
     border-top: 1px solid grey;
 }
