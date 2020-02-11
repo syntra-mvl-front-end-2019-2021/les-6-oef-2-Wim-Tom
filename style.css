@@ -1,0 +1,32 @@
+html{
+    font-weight: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+header{
+    width: 100%;
+}
+
+.banner{
+    color: white;
+    width: 100%;
+    background: url('images/banner.jpg');
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+}
+
