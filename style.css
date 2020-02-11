@@ -92,6 +92,8 @@ p{
 h3{
     color: #5586BF;
     font-weight: 100;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 h4{
@@ -157,6 +159,17 @@ footer > .content-1{
         width: 20%;
         text-align: center;
     }
-
+    .content-2 > .flex1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .person {
+        min-width: 200px;
+        width: 45%;
+    }
+    .articlebox {
+        height: 27em;
+    }
 
 }
