@@ -32,7 +32,9 @@ h2{
 }
 
 p{
-    font-size: .8em;
+    font-size: 1rem;
+    line-height: 1.4em;
+    font-weight: 100;
 }
 
 .banner{
@@ -97,6 +99,11 @@ h3{
 }
 
 h4{
+    color: #5586BF;
+    font-weight: 100;
+}
+
+.person > h4{
     color: white;
 }
 
@@ -122,6 +129,7 @@ h4{
     height: auto;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 1em;
 }
 
 .person:not(:last-of-type){
