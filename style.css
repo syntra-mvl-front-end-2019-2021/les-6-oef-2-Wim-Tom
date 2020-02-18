@@ -1,182 +1,289 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+
 html{
-    font-weight: 62.5%;
+    font-size: 62.5%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
     box-sizing: border-box;
 }
 
 body{
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #9B9B9B;
 }
 
-header{
+
+.header {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background-color: #5385c1;
+    color: #d4e0ef;
+   
+
+    line-height: 2em;
+    top: 0;
     width: 100%;
-    position: absolute;
-    color: white;
+    
+
 }
 
-h1{
-    color: white;
-    font-size: 1rem;
-    padding: 2em 1em 2em 1em;
-}
-
-h2{
-    font-weight: 200;
-    padding-bottom: .5em;
-}
-
-p{
-    font-size: 1rem;
-    line-height: 1.4em;
-    font-weight: 100;
-}
-
-.banner{
-    font-weight: 200;
-    color: white;
-    width: 100%;
-    background: url('images/banner.jpg');
-    background-size: cover;
-    background-position: center;
+.inner{
+    height: 4.4em;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
-    height: 14em;
-    border-top: .5em solid #5586BF;
-    padding: 1em;
-}
-
-.content-1, .content-2{
-    width: 100%;
-    padding: 1em;
-    text-align: center;
-}
-
-.content-2{
-    background-color: #5586BF;
-    color: white;
-    text-align: center;
-}
-
-.articlebox{
-    text-align: center;
-    height: 17em;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-
-}
-
-.articlebox:not(:last-of-type){
-    padding-bottom: 1em;
-}
-
-.content-1 > article:not(:last-of-type){
-    border-bottom: 1px solid grey;
-}
-
-.blauweknop{
-    width: 100%;
-    background-color: #5586BF;
-    color: white;
-    text-decoration: none;
-    font-size: .7em;
-    padding: .8em;
-}
-
-h3{
-    color: #5586BF;
-    font-weight: 100;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-h4{
-    color: #5586BF;
-    font-weight: 100;
-}
-
-.person > h4{
-    color: white;
-}
-
-.content-2 > h3{
-    color: white;
-}
-
-.content-2 > h3, .content-2 > p{
-    padding-bottom: .6em;
-}
-
-.person{
-    width: 100%;
-    height: 18em;
-    border: 1px solid white;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-flow: row;
+    justify-content: space-between;
     align-items: center;
 }
 
-.round{
-    height: auto;
-    border-radius: 50%;
-    overflow: hidden;
+.logo {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    text-align: right;
+
+}
+
+.nav a{
+    padding-left: 3em;
+    display: none;
+}
+
+.navPanelToggle{
+    display: none;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 6em;
+}
+
+h2, h3, h4, h5,  h6 {
+    color: #5385c1;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 3.6rem;
+    margin-bottom: .5em;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-top: 1em;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+}
+
+p {
+    line-height: 1.6em;
+    text-align: center;
+ 
+}
+
+/* Images  */
+
+
+
+.textimg{
+    width: 40%;
+
+    float: left;
+    display: block;
+    padding-right: 1em;
+}
+
+.rightimg{
+    float: right;
+    padding-left: 1em;
+}
+
+.row-3 {
+    display: flex;
+    margin-top: 2em;
+    flex-flow: column;
+    justify-content: space-between;
+
+}
+
+.row-2 {
+    display: flex;
+    flex-flow: column;
+    margin-top: 2em;
+}
+
+.row-2-left {
+
+}
+
+strong, b{
+    font-weight: bold;
+}
+
+em, i{
+    font-style: italic;
+}
+
+sup{
+    vertical-align: super;
+    font-size: small;
+}
+
+sub{
+    vertical-align: sub;
+    font-size: small;
+}
+
+hr {
+    border-bottom: solid 1px #5385c1;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+dl {
+    margin: 0 0 2em 0;
+    text-align: center;
+}
+dl dd {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+dl dt {
+    display: block;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 0 0 1em 0;
+}
+
+
+blockquote {
+    border-left: solid 4px #dbdbdb;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6em;
+    margin: 0 0 2em 0;
+    padding: 0.5em 0 0.5em 2em;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 1em;
 }
 
-.person:not(:last-of-type){
-    margin-bottom: 2em;
+.fit{
+    justify-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
 }
 
-.articleimg{
+.button{
+    text-align: center;
+    width: auto;
+    padding: 1em;
+    list-style: none;
+    display: block;
+    margin-bottom: 1em;
     width: 100%;
-    height: auto;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-1 {
+    
+    background-color: #5385c1;
+    color: white;
+  }
+  
+  .button-2 {
+    background-color: #5a5a5a;
+    color: white;
+  }
+  
+  .button-3 {
+    box-shadow: inset #E6E6E6 0px 0px 0px 2px;
+    background-color: white;
+
+    
+  }
+
+  .button-3 a {
+    color: #555;
+  }
+
+  .big{
+      font-size: 18px;
+  }
+
+  .small{
+      font-size: 9px;
+  }
+
+  .special .button{
+      background-color: #E6E6E6;
+      color: white;
+  }
+
+  .box {
+    border: solid 1px #dbdbdb;
+    margin-bottom: 2em;
+    padding: 1.5em;
 }
 
 footer{
     width: 100%;
     text-align: center;
-    padding: 1em;
+    padding-bottom: 3em;
    
 }
 
 footer > .content-1{
-    font-size: .5em;
-    border-top: 1px solid grey;
+    font-size: 1.2rem;
 }
 
-
-@media screen and (min-width: 480px) {
-
-    .content-1,
-    .content-2,
-    .articlebox {
-        text-align: left;
-        align-items: flex-start;
-    }
-    .blauweknop {
-        width: 20%;
-        text-align: center;
-    }
-    .content-2 > .flex1 {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    .person {
-        min-width: 200px;
-        width: 45%;
-    }
-    .articlebox {
-        height: 27em;
-    }
-
+.content-1 a {
+    color: #9B9B9B;
 }

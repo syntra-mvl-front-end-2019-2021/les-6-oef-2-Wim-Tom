@@ -51,10 +51,10 @@ body{
     width: 100%;
 }
 
-#header .inner {
+.inner {
     margin: 0 auto;
     position: relative;
-    width: 90%;
+    width: 70%;
 }
 
 #header .logo {
@@ -91,11 +91,11 @@ body{
 /* Main  */
 
 
-#main .inner {
+main .inner {
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 120px;
     position: relative;
-    width: 90%;
+    width: 70%;
 }
 
 section.wrapper, article.wrapper {
@@ -135,7 +135,7 @@ section.wrapper header p, article.wrapper header p {
 }
 
 
-#main h2, #main h3, #main h4, #main h5, #main h6 {
+h2, h3, h4, h5,  h6 {
     color: #5385c1;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -143,27 +143,27 @@ section.wrapper header p, article.wrapper header p {
 
 }
 
-#main h2 {
+h2 {
     font-size: 2.75em;
 }
 
-#main h3 {
+h3 {
     font-size: 2em;
 }
 
-#main h4 {
+h4 {
     font-size: 1.8em;
 }
 
-#main h5 {
+h5 {
     font-size: 1.6em;
 }
 
-#main h6 {
+h6 {
     font-size: 1.4em;
 }
 
-#main p {
+p {
     font-size: 1.3em;
     line-height: 1.6em;
 }
@@ -174,12 +174,6 @@ section.wrapper header p, article.wrapper header p {
 }
 
 .align-center { text-align: center; }
-
-#main .bold { font-weight: 600; }
-#main .strong { font-weight: 600; }
-#main .italic, .em { font-style: italic; }
-.sup { font-variant-position: super;}
-.sub { font-variant-position: sub;}
 
 
 
@@ -201,6 +195,12 @@ section.wrapper header p, article.wrapper header p {
 .row-3 {
     display: flex;
     margin-top: 2em;
+    justify-content: space-between;
+}
+
+.row-3 div{
+    width: 31%;
+    text-align: justify;
 }
 
 hr {
@@ -350,6 +350,8 @@ blockquote {
     float: right;
     padding-left: 1em;
 }
+
+
 
 
 
