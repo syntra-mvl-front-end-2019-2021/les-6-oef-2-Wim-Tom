@@ -142,7 +142,7 @@ p {
 
 }
 
-.row-2 {
+.row-2, .row-4 {
     display: flex;
     flex-flow: column;
     margin-top: 2em;
@@ -225,6 +225,7 @@ blockquote {
     display: block;
     margin-bottom: 1em;
     width: 100%;
+    font-weight: bold;
 }
 
 .button a {
@@ -286,4 +287,47 @@ footer > .content-1{
 
 .content-1 a {
     color: #9B9B9B;
+}
+
+@media screen and (min-width: 480px) {
+    h2,h3,h4,h5,h6{
+        text-align: left;
+    }
+
+    p{
+        text-align: left;
+    }
+
+    .centerheader h2, .centerheader p{
+        text-align: center;
+    }
+
+    .buttons{
+        flex-flow: row;
+        justify-content: flex-start;
+    }
+
+    .button{
+        width: auto;
+        margin-right: 1em;
+    }
+    
+   
+}
+
+@media screen and (min-width: 736px){
+    .row-2{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .row-2 div {
+        width: 48%;
+    }
+
+    footer{
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+    }
 }
