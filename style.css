@@ -14,16 +14,35 @@ body{
     font-size: 1.4rem;
 }
 
+main{
+    padding: 5%;
+}
+
+/*
+
 header{
     width: 100%;
     position: absolute;
     color: white;
+    background-color: blue;
+    
+}
+
+.spacer{
+    padding-top: 10em;
+}
+
+.bar{
+    width: 100%;
+    background-color: #5586BF;
+    position: fixed;
+ 
 }
 
 h1{
     color: white;
     font-size: 1rem;
-    padding: 2em 1em 2em 1em;
+    padding: 1em 1em 1em 1em;
 }
 
 h2{
@@ -72,6 +91,11 @@ p{
     flex-flow: column;
     justify-content: space-around;
 
+}
+
+.autobox{
+    height: auto;
+    padding: 10%;
 }
 
 .articlebox:not(:last-of-type){
@@ -179,4 +203,85 @@ footer > .content-1{
         height: 27em;
     }
 
+}*/
+
+.navbar{
+    width: 100%;
+    padding: 1em;
+    background-color: #5586BF;
+    color: white;
+    font-size: 1rem;
+    position: fixed;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+.content-1{
+    padding-top: 3em;
+    border-bottom: 1px solid #9B9B9B;
+}
+
+header{
+    padding-bottom: 2em;
+}
+
+.articlebox{
+    height: auto;
+    padding: 5%;
+}
+
+.lined{
+    border-bottom: 1px solid #9B9B9Bs;
+}
+
+h3,h4,h2,h5, h6{
+    text-align: center;
+    color: #5586BF;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 2em;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h4{
+    font-size: 1.4rem;
+}
+
+h5{
+   font-size: 1.2rem;
+}
+
+h6{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #9B9B9B;
+    text-align: center;
+    margin-top: 4%;
+    line-height: 1.6em;
+}
+
+header > p {
+    font-size: .8rem;
+}
+
+.rowarticle{
+    padding-top: 1em;
+}
+
+.articlerow{
+    display: flex;
+    flex-flow: column;
+}
+
+b, strong{
+    color: black;
 }
