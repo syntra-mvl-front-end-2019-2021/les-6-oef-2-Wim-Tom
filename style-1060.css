@@ -11,13 +11,27 @@
     box-sizing: border-box;
 }
 
+strong, b{
+    font-weight: bold;
+}
 
+em, i{
+    font-style: italic;
+}
 
+sup{
+    font-variant-position: super;
+}
+
+sub{
+    font-variant-position: sub;
+}
 body{
     width: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     line-height: 1;
+    color: #9B9B9B;
 }
 
 
@@ -26,6 +40,7 @@ body{
 #header {
     display: block;
     position: fixed;
+    z-index: 100;
     background-color: #5385c1;
     color: #d4e0ef;
     height: 44px;
@@ -36,10 +51,10 @@ body{
     width: 100%;
 }
 
-#header .inner {
+.inner {
     margin: 0 auto;
     position: relative;
-    width: 90%;
+    width: 70%;
 }
 
 #header .logo {
@@ -76,11 +91,11 @@ body{
 /* Main  */
 
 
-#main .inner {
+main .inner {
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 120px;
     position: relative;
-    width: 90%;
+    width: 70%;
 }
 
 section.wrapper, article.wrapper {
@@ -120,7 +135,7 @@ section.wrapper header p, article.wrapper header p {
 }
 
 
-#main h2, #main h3, #main h4, #main h5, #main h6 {
+h2, h3, h4, h5,  h6 {
     color: #5385c1;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -128,27 +143,27 @@ section.wrapper header p, article.wrapper header p {
 
 }
 
-#main h2 {
+h2 {
     font-size: 2.75em;
 }
 
-#main h3 {
+h3 {
     font-size: 2em;
 }
 
-#main h4 {
+h4 {
     font-size: 1.8em;
 }
 
-#main h5 {
+h5 {
     font-size: 1.6em;
 }
 
-#main h6 {
+h6 {
     font-size: 1.4em;
 }
 
-#main p {
+p {
     font-size: 1.3em;
     line-height: 1.6em;
 }
@@ -159,12 +174,6 @@ section.wrapper header p, article.wrapper header p {
 }
 
 .align-center { text-align: center; }
-
-#main .bold { font-weight: 600; }
-#main .strong { font-weight: 600; }
-#main .italic, .em { font-style: italic; }
-.sup { font-variant-position: super;}
-.sub { font-variant-position: sub;}
 
 
 
@@ -186,6 +195,12 @@ section.wrapper header p, article.wrapper header p {
 .row-3 {
     display: flex;
     margin-top: 2em;
+    justify-content: space-between;
+}
+
+.row-3 div{
+    width: 31%;
+    text-align: justify;
 }
 
 hr {
@@ -225,61 +240,80 @@ blockquote {
 
 /*  Buttons  */
 
-ul.buttons {
-    list-style: none;
-    padding-left: 0;
-    margin: 0 0 2em 0;
-}
-ul.buttons li {
-    display: inline-block;
-    padding: 0 1em 0 0;
-    vertical-align: middle;
-}
 
-ul.buttons.fit {
+
+
+
+.buttons{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 0;
-
-    overflow: hidden;
-}
-ul.actions.fit li {
-    display: inline-block;
-    padding: 0 0 0 1em;
-    flex-grow: 1;
-    width: 33.33333%;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
-.button {
-    border: none;
-    color: white;
-    padding: 0 1.5em;
+.fit{
+    justify-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.button{
     text-align: center;
+    width: auto;
+    padding: 1em;
+    list-style: none;
+    display: block;
+   margin-right: 10px;
+
+}
+
+.button a {
+    color: white;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.6em;
-    font-weight: 600;
-    line-height: 2.95em;
-  }
-  
-  .button-1 {
-    background-color: #5a5a5a;
+}
+
+.button-1 {
+    
+    background-color: #5385c1;
+    color: white;
   }
   
   .button-2 {
-    background-color: #5385c1;
+    background-color: #5a5a5a;
+    color: white;
   }
   
   .button-3 {
-    border: 2px solid #555;
+    box-shadow: inset #E6E6E6 0px 0px 0px 2px;
     background-color: white;
+
+    
+  }
+
+  .button-3 a {
     color: #555;
   }
 
-  .button-1.big { font-size: 2em; }
-  .button-3.small { font-size: 1.2em; }
+  .big{
+      font-size: 18px;
+  }
+
+  .small{
+      font-size: 9px;
+  }
+
+  .special .button{
+      background-color: #E6E6E6;
+      color: white;
+  }
+
+
 
 /* Images  */
+
+
 
 .image-left {
     display: block;
@@ -304,6 +338,19 @@ ul.actions.fit li {
     margin-bottom: 2em;
     padding: 1.5em;
 }
+
+.textimg{
+    height: 7em;
+    float: left;
+    display: block;
+    padding-right: 1em;
+}
+
+.rightimg{
+    float: right;
+    padding-left: 1em;
+}
+
 
 
 
