@@ -1,6 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
-
 html{
     font-size: 62.5%;
 }
@@ -14,164 +13,69 @@ html{
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
+    font-size: inherit;
     line-height: 1;
-    color: #9B9B9B;
+    color: #9a9a9a;
 }
 
+/* FONTS  */
 
-.header {
-    display: block;
-    position: fixed;
-    z-index: 100;
-    background-color: #5385c1;
-    color: #d4e0ef;
-   
-
-    line-height: 2em;
-    top: 0;
-    width: 100%;
-    
-
-}
-
-.inner{
-    height: 4.4em;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #ffffff;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.3em;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-.nav{
-    text-align: right;
-
-}
-
-.nav a{
-    padding-left: 3em;
-    display: none;
-}
-
-.navPanelToggle{
-    display: none;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 6em;
-}
-
-h2, h3, h4, h5,  h6 {
+h1, h2, h3, h4, h5,  h6 {
     color: #5385c1;
-    margin-top: 1em;
-    margin-bottom: 1em;
     font-weight: 300;
     text-align: center;
+    line-height: 1.5em;
+    margin: 0 0 1rem 0;
 }
-
-
-h2 {
+h1 {
     font-size: 3.6rem;
-    margin-bottom: .5em;
+    font-weight: 100;
 }
-
-h3 {
+h2 {
     font-size: 3rem;
-    margin-top: 1em;
+    font-weight: 100;
 }
-
+h3 {
+    font-size: 2.6rem;
+    font-weight: 100;
+}
 h4 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
-
 h5 {
+    font-size: 2rem;
+}
+h6 {
     font-size: 1.8rem;
 }
-
-h6 {
-    font-size: 1.4rem;
-}
-
 p {
+    font-size: 1.6rem;
     line-height: 1.6em;
     text-align: center;
- 
+    margin-bottom: 2em;
 }
 
-/* Images  */
+.smaller { font-size: 1.5rem;}
+.align-center { text-align: center; }
+strong, b { font-weight: 600; }
+em, i { font-style: italic; }
+sup { vertical-align: super; font-size: small; }
+sub { vertical-align: sub; font-size: small; }
+dl dt { font-size: 1.6rem; font-weight: 600; }
+blockquote { font-size: 1.6rem; }
+.button a { font-size: 1.6rem; }
+.button-big a { font-size: 2.2rem; }
+.button-small a { font-size: 1.2rem; }
+.logo { font-size: 1.6rem; }
+.menu a { font-size: 1.3rem; color: white; }
 
-
-
-.textimg{
-    width: 40%;
-
-    float: left;
-    display: block;
-    padding-right: 1em;
-}
-
-.rightimg{
-    float: right;
-    padding-left: 1em;
-}
-
-.row-3 {
-    display: flex;
-    margin-top: 2em;
-    flex-flow: column;
-    justify-content: space-between;
-
-}
-
-.row-2, .row-4 {
-    display: flex;
-    flex-flow: column;
-    margin-top: 2em;
-}
-
-.row-2-left {
-
-}
-
-strong, b{
-    font-weight: bold;
-}
-
-em, i{
-    font-style: italic;
-}
-
-sup{
-    vertical-align: super;
-    font-size: small;
-}
-
-sub{
-    vertical-align: sub;
-    font-size: small;
-}
+/* ELEMENTS */
 
 hr {
-    border-bottom: solid 1px #5385c1;
+    border-bottom: solid 1px #dbdbdb;
     margin-top: 3em;
     margin-bottom: 3em;
 }
@@ -186,11 +90,8 @@ dl dd {
 }
 dl dt {
     display: block;
-    font-weight: 600;
-    font-size: 1.8rem;
     margin: 0 0 1em 0;
 }
-
 
 blockquote {
     border-left: solid 4px #dbdbdb;
@@ -201,133 +102,372 @@ blockquote {
     padding: 0.5em 0 0.5em 2em;
 }
 
-.buttons{
+.box {
+    border: solid 1px #dbdbdb;
+    margin-bottom: 2em;
+    padding: 1.5em;
+}
+
+/* ELEMENTS BUTTONS */
+
+.buttons {
     width: 100%;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 1em;
 }
-
-.fit{
-    justify-content: stretch;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1em;
-}
-
-.button{
+.button {
     text-align: center;
     width: auto;
-    padding: 1em;
+    padding: 1.5em 2em;
     list-style: none;
     display: block;
     margin-bottom: 1em;
     width: 100%;
     font-weight: bold;
 }
-
 .button a {
     color: white;
     text-decoration: none;
 }
-
 .button-1 {
-    
     background-color: #5385c1;
     color: white;
-  }
-  
-  .button-2 {
+}
+.button-2 {
     background-color: #5a5a5a;
     color: white;
-  }
-  
-  .button-3 {
+}
+.button-3 {
     box-shadow: inset #E6E6E6 0px 0px 0px 2px;
     background-color: white;
-
-    
-  }
-
-  .button-3 a {
+}
+.button-3 a {
     color: #555;
-  }
-
-  .big{
-      font-size: 18px;
-  }
-
-  .small{
-      font-size: 9px;
-  }
-
-  .special .button{
-      background-color: #E6E6E6;
-      color: white;
-  }
-
-  .box {
-    border: solid 1px #dbdbdb;
-    margin-bottom: 2em;
-    padding: 1.5em;
 }
 
-footer{
+/*  button-fit ---- Oplossing Tom met grid ---- oplossing niet gevonden met flex */
+
+.button-fit {
+    /*justify-content: stretch;*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+}
+
+.button-special .button {
+    background-color: #E6E6E6;
+    color: white;
+}
+
+/* IMAGES  */
+
+.image {
+    display: block;
+}
+.img-text{
+    width: 40%;
+    float: left;
+    display: block;
+}
+.leftimg {
+    width: 35%;
+    float: left;
+    padding: 0.5em 1.5em 1em 0;
+    top: 0.25em;
+}
+.img-right {
+    width: 35%;
+    float: right;
+    padding: 0.6em 0 1em 0.5em;
+}
+.img-full {
+    display: block;
+    width:100%;
+    margin-bottom: 2em;
+}
+.img-round {
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 3em 1em;
+}
+
+/* HEADER */
+
+header {
+    display: block;
+    width: 100%;
+    line-height: 4.4rem;
+}
+.header-homepage {
+    position: absolute;
+    color: white;
+}
+.header-other {
+    position: fixed;
+    z-index: 100;
+    background-color: #5385c1;
+}
+.inner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-homepage {
+    padding-top: 2rem;
+}
+.logo {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+.logo > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* NAV FOR BIGGER SCREENS */
+
+    .nav {
+        text-align: right;
+        height: 2.6rem;
+        line-height: 2.6rem;
+    }
+    .menu {
+        margin: 0 30px 0 0;
+    }
+    .menu a {
+        clear: right;
+        text-decoration: none;
+        padding-left: 3em;
+    }
+    label {
+        color: white;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        display: none;
+        width: 2.6rem;
+        float: right;
+    }
+    #toggle {
+        display: none;
+    }
+
+
+/* NAV FOR SMALLER SCREENS */
+
+@media screen and (max-width: 735px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-left: 0px solid #dbdbdb;
+        background-color: #5385c1;
+        padding-left: 0;
+        line-height: 6rem;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
+
+/* BANNER INDEX PAGE */
+
+.banner-homepage {
+    background: url('images/banner.jpg');
+    background-size: cover;
+    background-position: top;
+    display: block;
+    border-top: 0.8em solid #5586BF;
+    padding: 9em 2.4em 6em 2.4em;
+}
+.banner-homepage-text {
+    font-weight: 200;
+    color: white;
+    text-align: center;
+}
+.banner-homepage  p {
+    font-size: 1.4rem;
+}
+
+/* MAIN */
+
+.width-100 {
+    width: 100%;
+    margin: 0 auto;
+}
+.width-85-90 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wrapper-1 {
+    padding-top: 8rem;
+}
+.wrapper-2 {
+    padding: 3rem 0;
+}
+
+/* FLEX ROWS */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.flex-4 {
+    flex-wrap: nowrap;
+    padding: 1em;
+    margin: 0 auto;
+}
+.flex-4 h4 {
+    color: white;
+    margin-bottom: 0.4em;
+}
+.box-text {
+    display: block;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+.box-text:last-child {
+    border-bottom: 0 solid #dbdbdb;
+}
+.blue {
+    background-color: #5586BF;
+    text-align: center;
+    color: white;
+}
+.box-person {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
+
+footer {
     width: 100%;
     text-align: center;
-    padding-bottom: 3em;
-   
 }
-
-footer > .content-1{
-    font-size: 1.2rem;
+.footer-content {
+    font-size: 1.3rem;
+    border-top: 1px solid #dbdbdb;
+    padding: 3rem 0;
 }
-
-.content-1 a {
+.footer-content a {
     color: #9B9B9B;
+    text-decoration: none;
 }
+
+/* RESPONSIVE */
 
 @media screen and (min-width: 480px) {
-    h2,h3,h4,h5,h6{
+    .inner, .width-85-90, footer {
+        width: 90%;
+    }
+    h1, h2, h3, h4, h5, h6, p, dl, blockquote {
         text-align: left;
     }
-
-    p{
-        text-align: left;
-    }
-
-    .centerheader h2, .centerheader p{
-        text-align: center;
-    }
-
-    .buttons{
-        flex-flow: row;
+    .buttons {
+        flex-direction: row;
         justify-content: flex-start;
     }
-
-    .button{
+    .button { 
         width: auto;
         margin-right: 1em;
     }
-    
-   
+    .flex-4 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .box-person {
+        width: 45%;
+    }
 }
 
 @media screen and (min-width: 736px){
-    .row-2{
-        flex-flow: row;
+    .flex-2 {
+        flex-direction: row;
         justify-content: space-between;
     }
-
-    .row-2 div {
-        width: 48%;
+    .flex-2 div {
+        width: 45%;
     }
-
     footer{
         text-align: left;
-        width: 90%;
         margin: 0 auto;
     }
+    header h2 {
+        font-size: 4.4rem;
+    }
 }
+
+@media screen and (min-width: 980px) {
+    .inner, .width-85-90, footer {
+        width: 85%;
+    }
+    .wrapper-1 {
+        padding-top: 12em;
+    }
+    .wrapper-2 {
+        padding: 6em 0 3em 0;
+    }
+    .width-45 {
+        width: 45%;
+    }
+    .flex-3, .flex-2-elements {
+        flex-direction: row;
+    }
+    .flex-3 div:not(:last-child) {
+        padding-right: 2em;
+    }
+    .flex-4 {
+        flex-wrap: no-wrap;
+        justify-content: space-between;
+    }
+    .box-person {
+        width: 22%;
+    }
+    .box-text {
+        border-bottom: 0px solid #dbdbdb;
+        border-right: 1px solid #dbdbdb;
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+    }
+    .box-text:last-child {
+        border-right: 0 solid #dbdbdb;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .inner, .width-85-90, footer {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .inner, .width-85-90, footer {
+        width: 75%;
+    }
+}
+
+
+
+
